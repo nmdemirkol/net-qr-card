@@ -1,0 +1,213 @@
+// Import Variables and Mixins
+@import 'variables';
+@import 'mixins';
+
+// Reset or Normalize Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; // 1rem = 16px
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-root;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+}
+
+h2 {
+  font-size: $font-size-xl;
+}
+
+h3 {
+  font-size: $font-size-lg;
+}
+
+h4 {
+  font-size: $font-size-md;
+}
+
+h5 {
+  font-size: $font-size-sm;
+}
+
+h6 {
+  font-size: $font-size-xs;
+}
+
+// Paragraphs
+p {
+  margin-bottom: $spacing-md;
+  font-size: $font-size-md;
+}
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-md;
+}
+
+li {
+  margin-bottom: $spacing-sm;
+}
+
+// Forms
+/*
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid $border-color-light;
+  border-radius: $border-radius-md;
+  padding: $spacing-sm;
+  margin-bottom: $spacing-md;
+  box-shadow: $box-shadow-sm;
+  transition: border-color $transition-base;
+
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+    box-shadow: $box-shadow-md;
+  }
+}*/
+
+textarea {
+  resize: vertical;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-md;
+
+  th, td {
+    padding: $spacing-sm;
+    border: 1px solid $border-color-light;
+    text-align: left;
+  }
+
+  th {
+    background-color: $color-light;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $color-gray-light;
+  }
+}
+
+// Buttons
+button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  border-radius: $border-radius-md;
+  padding: $button-padding-y $button-padding-x;
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-white;
+  transition: background-color $transition-base;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-primary, 10%);
+  }
+}
+
+// Utility Classes
+.clearfix {
+  @include clearfix;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width-md;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -$spacing-md;
+}
+
+.col {
+  padding: 0 $spacing-md;
+}
+
+// Media Queries
+@include respond-to(xs) {
+  .container {
+    max-width: $container-width-sm;
+  }
+}
+
+@include respond-to(sm) {
+  .container {
+    max-width: $container-width-sm;
+  }
+}
+
+@include respond-to(md) {
+  .container {
+    max-width: $container-width-md;
+  }
+}
+
+@include respond-to(lg) {
+  .container {
+    max-width: $container-width-lg;
+  }
+}
+
+@include respond-to(xl) {
+  .container {
+    max-width: $container-width-xl;
+  }
+}

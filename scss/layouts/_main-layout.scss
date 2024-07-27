@@ -1,0 +1,62 @@
+
+
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/images/NetQRCardBGOpacity.png");
+    background-size: auto;
+    min-height: 90vh;
+      .logo-area {
+        
+        flex: 100px;
+    
+     
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 100px;
+      }
+      
+      .main-content {
+        overflow: hidden;
+        flex: 5;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px 0 0 50px;
+        margin: 50px  0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        
+
+        .main-content-header{
+  
+          background-image: url("../../public/images/NetQRCardBG2Opacity.png");
+          background-color: $secondary-color;
+          padding: 50px;
+
+          .main-content-title{
+            padding: 0;
+            margin: 0;
+            color: white;
+            max-width: 800px;
+            margin: auto;
+          }
+          .main-content-description{
+            padding: 0;
+            margin: 20px auto 0 auto;
+            color: #a3c7b9;
+            max-width: 800px;
+      
+          }
+  
+  
+        }
+    
+
+
+
+      }
+
+  }
+  

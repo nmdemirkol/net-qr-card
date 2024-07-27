@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+width: 100%;
+ 
+  
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    .nav-links {
+
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .item {
+            display: block;
+            float: left;
+
+            a {
+                color: $tertiary-color;
+                text-decoration: none;
+             
+                padding: 10px 20px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary-color;
+                }
+                
+              
+            }
+            &.active{
+                color: $secondary-color;
+                font-weight: bold;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+           
+         
+        }
+    }
+}

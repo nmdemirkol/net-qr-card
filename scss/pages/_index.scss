@@ -1,0 +1,85 @@
+.index-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 20px;
+
+
+}
+
+.index-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 50px;
+}
+
+.index-container-type-1 {
+
+
+
+
+
+    h1 {
+
+        color: #333;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        color: #666;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.index-container-type-2::after {
+    
+    content: '';
+    background-image: url("../../public/images/NetQRCardBG2Opacity.png");
+    opacity: 0.3;
+    /* Opaklık değeri */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+
+}
+
+.index-container-type-2 {
+    background-color: $secondary-color;
+    position: relative;
+    z-index: 6;
+    padding: 20px 0;
+    color: white;
+    h1 {
+
+        color: white;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #a3c7b9;
+        
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        color: #a3c7b9;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+}

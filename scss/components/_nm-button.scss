@@ -1,0 +1,35 @@
+/* Button.module.scss */
+.nm-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &.primary {
+      background-color: $secondary-color;
+      color: #fff;
+  
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  
+    &.secondary {
+        padding: 8px 20px;
+      background-color: white;
+      color: $secondary-color;
+      border: $secondary-color 2px solid;
+
+  
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+        border: $primary-color 2px solid;
+      }
+    }
+  }

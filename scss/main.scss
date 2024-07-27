@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+@import '@/node_modules/normalize.css/normalize.css';
+
+
+@import "variables";
+
+// componets
+@import "components/logo";
+@import "components/nm-button";
+@import "components/navbar";
+
+// layouts
+@import "layouts/main-layout";
+
+// pages
+@import "pages/index";
+
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+  
+    font-style: normal;
+  }
+  
